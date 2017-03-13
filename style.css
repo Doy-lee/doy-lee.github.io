@@ -1,0 +1,140 @@
+/*******************************************************************************
+ * Globals
+ ******************************************************************************/
+* {
+	/* Reset all default margins and padding set by browser */
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto, sans-serif;
+	font-size: 1em;
+	list-style-type: none;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+h1
+{
+	font-size:   3em;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size:   1.5em;
+	padding-bottom: 0.5%;
+	font-weight: bold;
+}
+
+body
+{
+	min-width: 940px;
+	max-width: 60%;
+	margin: auto;
+}
+
+/*******************************************************************************
+ * Index Page (index.html)
+ ******************************************************************************/
+#index_wrapper
+{
+	margin: 3%;
+	background-image: url("images/home/background.jpg");
+}
+
+.index_divider, .index_divider_no_top_margin
+{
+	height: 2px;
+	margin-top:    2%;
+	margin-bottom: 1%;
+
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.index_divider_no_top_margin
+{
+	margin-top:    0%;
+}
+
+.index_ulist_group > li
+{
+	display: inline-block;
+}
+
+/* TODO(doyle): All these ch's are manually set to derived limits to ensure
+ * tight packing of css elements. Is there a better way? */
+.index_work_exp_wrapper_table_group_year, .index_education_wrapper_group_year,
+.index_projects_wrapper_group_year
+{
+	/* NOTE: CH is the measure of the character length of '0' for the current
+	 * font */
+	min-width: 9ch;
+	font-weight: bold;
+}
+
+/*******************************************************************************
+ * Index Work Exp Info
+/******************************************************************************/
+
+.index_work_exp_wrapper_table
+{
+	/* NOTE(doyle): Silly negative offset because you can't use margin in table
+	 * cells. But we don't want table spacing at the start of the table ... */
+	display: table;
+	border-spacing: 7px 0px;
+	border-collapse: separate;
+	margin-left: -7px;
+}
+
+.index_work_exp_wrapper_table_group
+{
+	display: table-row;
+}
+
+.index_work_exp_wrapper_table_group_year,
+.index_work_exp_wrapper_table_group_info
+{
+	display: table-cell;
+}
+
+/*******************************************************************************
+ * Index Education
+/******************************************************************************/
+
+.index_education_wrapper_group_place
+{
+	font-weight: bold;
+	min-width: 30ch;
+
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}
+
+/*******************************************************************************
+ * Index Projects
+/******************************************************************************/
+.index_projects_wrapper_group_name
+{
+	min-width: 13ch;
+	font-weight: bold;
+}
+
+.index_projects_wrapper_group_description
+{
+	min-width: 30ch;
+	max-width: 50ch;
+}
+
+.index_projects_wrapper_group_tech
+{
+	min-width: 10%;
+}
+
+.index_projects_wrapper_group_name, .index_projects_wrapper_group_description
+{
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}
