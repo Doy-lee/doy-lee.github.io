@@ -5,35 +5,77 @@
 	/* Reset all default margins and padding set by browser */
 	margin: 0;
 	padding: 0;
-
-	font-family: Roboto, sans-serif;
-	font-size: 1em;
 	list-style-type: none;
 	color: rgba(0, 0, 0, 0.8);
+
+	/* Disable auto-resizing on load since it's unreliable. But allow resizing
+	 * by users after the page has loaded */
+	-webkit-text-size-adjust: 100%;
 }
+
+html {
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+}
+
+body {
+	min-width: 50%;
+	margin: auto;
+}
+
+@media screen and (min-width: 60em) {
+	/* 960px / 16px == 60em (since 1em == 16px, base font size (above)) */
+	html {
+		font-size: 1.0em;
+	}
+
+	body {
+		max-width: 940px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	/* 768px / 16px == 48em (since 1em == 16px, base font size (above)) */
+	html {
+		font-size: 1.0em;
+	}
+
+	body {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 20em) {
+	/* 320px / 16px == 20em (since 1em == 16px, base font size (above)) */
+	html {
+		font-size: 0.65em;
+	}
+
+	body {
+		max-width: 100%;
+	}
+}
+
 
 a:link, a:visited {
 	text-decoration: none;
 }
 
-h1
-{
-	font-size:   3em;
+h1 {
 	font-weight: bold;
+	font-size: 2.5em;
 }
 
 h2
 {
-	font-size:   1.5em;
 	padding-bottom: 0.5%;
 	font-weight: bold;
+	font-size: 1.5em;
 }
 
-body
-{
-	min-width: 940px;
-	max-width: 60%;
-	margin: auto;
+h3  {
+	font-size: 1em;
 }
 
 /*******************************************************************************
@@ -41,8 +83,7 @@ body
  ******************************************************************************/
 #index_wrapper
 {
-	margin: 3%;
-	background-image: url("images/home/background.jpg");
+	margin: 2%;
 }
 
 .index_divider, .index_divider_no_top_margin
@@ -50,91 +91,68 @@ body
 	height: 2px;
 	margin-top:    2%;
 	margin-bottom: 1%;
-
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.index_divider_no_top_margin
-{
-	margin-top:    0%;
+.index_divider_no_top_margin {
+	margin-top: 0%;
 }
 
-.index_ulist_group > li
-{
-	display: inline-block;
+#index_work_exp_table,
+#index_education_table,
+#index_projects_table {
+	display: table;
+
+	border-spacing: 5px 2px;
+	border-collapse: separate;
+	margin-left: -5px;
 }
 
-/* TODO(doyle): All these ch's are manually set to derived limits to ensure
- * tight packing of css elements. Is there a better way? */
-.index_work_exp_wrapper_table_group_year, .index_education_wrapper_group_year,
-.index_projects_wrapper_group_year
-{
-	/* NOTE: CH is the measure of the character length of '0' for the current
-	 * font */
-	min-width: 9ch;
-	font-weight: bold;
-}
 
 /*******************************************************************************
  * Index Work Exp Info
 /******************************************************************************/
-
-.index_work_exp_wrapper_table
-{
-	/* NOTE(doyle): Silly negative offset because you can't use margin in table
-	 * cells. But we don't want table spacing at the start of the table ... */
-	display: table;
-	border-spacing: 7px 0px;
-	border-collapse: separate;
-	margin-left: -7px;
-}
-
-.index_work_exp_wrapper_table_group
-{
+.index_work_exp_table_row {
 	display: table-row;
 }
 
-.index_work_exp_wrapper_table_group_year,
-.index_work_exp_wrapper_table_group_info
-{
+.index_work_exp_table_cell,
+.index_work_exp_table_cell_year {
 	display: table-cell;
+}
+
+.index_work_exp_table_cell_year {
+	font-weight: bold;
 }
 
 /*******************************************************************************
  * Index Education
 /******************************************************************************/
+.index_education_table_row {
+	display: table-row;
+}
 
-.index_education_wrapper_group_place
-{
+.index_education_table_cell,
+.index_education_table_cell_year {
+	display: table-cell;
+}
+
+.index_education_table_cell_year {
 	font-weight: bold;
-	min-width: 30ch;
-
-	padding-left: 0.5%;
-	padding-right: 0.5%;
 }
 
 /*******************************************************************************
  * Index Projects
 /******************************************************************************/
-.index_projects_wrapper_group_name
-{
-	min-width: 13ch;
+.index_projects_table_row {
+	display: table-row;
+}
+
+.index_projects_table_cell,
+.index_projects_table_cell_year {
+	display: table-cell;
+}
+
+.index_projects_table_cell_year {
 	font-weight: bold;
-}
-
-.index_projects_wrapper_group_description
-{
-	min-width: 30ch;
-	max-width: 50ch;
-}
-
-.index_projects_wrapper_group_tech
-{
-	min-width: 10%;
-}
-
-.index_projects_wrapper_group_name, .index_projects_wrapper_group_description
-{
-	padding-left: 0.5%;
-	padding-right: 0.5%;
 }
