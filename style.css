@@ -119,17 +119,6 @@ h1, h2, a:hover {
 	margin-top: 0;
 }
 
-#index_education_table,
-#index_projects_summary_table {
-	display: table;
-
-	border-spacing: 0.5em 0.25em;
-	border-collapse: separate;
-	margin-left: -0.5em;
-	margin-top: -0.25em;
-	margin-bottom: -0.25em;
-}
-
 .index_education_table_cell p ,
 .index_education_table_cell_year p,
 .index_work_exp_table_cell p,
@@ -212,8 +201,12 @@ h1, h2, a:hover {
  .index_skills_table_cell {
 	 display: table-cell;
 	 padding: 0.25em;
+	 margin-right: 1em;
+	 margin-bottom: 0.5em;
 	 border: 2px solid #009688;
 	 border-radius: 4px;
+
+	 float: left;
  }
 
 /*******************************************************************************
@@ -241,6 +234,16 @@ h1, h2, a:hover {
 /*******************************************************************************
  * index_eduation
 /******************************************************************************/
+#index_education_table {
+	display: table;
+
+	border-spacing: 0.5em 0.3em;
+	border-collapse: separate;
+	margin-left: -0.5em;
+	margin-top: -0.3em;
+	margin-bottom: -0.3em;
+}
+
 .index_education_table_row {
 	display: table-row;
 }
@@ -253,12 +256,32 @@ h1, h2, a:hover {
 /*******************************************************************************
  * index_projects_summary
 /******************************************************************************/
+
+#index_projects_summary_table {
+	display: table;
+
+	border-spacing: 0.5em 1em;
+	border-collapse: separate;
+	margin-left: -0.5em;
+	margin-top: -1em;
+	margin-bottom: -1em;
+}
+
 .index_projects_summary_table_row {
 	display: table-row;
 }
 
 .index_projects_summary_table_cell_name {
 	min-width: 13ch;
+}
+
+.index_projects_summary_table_cell_role {
+	color: #009688;
+	font-weight: bold;
+}
+
+.index_projects_summary_table_cell_tech {
+	font-style: italic;
 }
 
 .index_projects_summary_table_cell,
