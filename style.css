@@ -272,7 +272,7 @@ h1, h2, a:hover {
 }
 
 .index_projects_summary_table_cell_name {
-	min-width: 13ch;
+	max-width: 10ch;
 }
 
 .index_projects_summary_table_cell_role {
