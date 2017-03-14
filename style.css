@@ -14,7 +14,7 @@
 }
 
 p {
-	margin-top: 1%;
+	margin-top: 0.5em;
 }
 
 html {
@@ -68,7 +68,7 @@ a:link, a:visited {
 
 h1 {
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 2.25em;
 }
 
 h2
@@ -88,6 +88,7 @@ h1, h2, a:hover {
 
 .index_divider, .index_divider_no_top_margin {
 	background-color: #009688;
+	display: block;
 }
 
 /*******************************************************************************
@@ -101,21 +102,32 @@ h1, h2, a:hover {
 .index_divider, .index_divider_no_top_margin
 {
 	height: 2px;
-	margin-top:    2%;
-	margin-bottom: 1%;
+
+	margin-top:    1em;
+	margin-bottom: 0.5em;
+
+
+}
+
+@media print {
+	#index_divider_last_before_optional_content {
+		page-break-after: always;
+	}
 }
 
 .index_divider_no_top_margin {
-	margin-top: 0%;
+	margin-top: 0;
 }
 
 #index_education_table,
 #index_projects_summary_table {
 	display: table;
 
-	border-spacing: 5px 2px;
+	border-spacing: 0.5em 0.25em;
 	border-collapse: separate;
-	margin-left: -5px;
+	margin-left: -0.5em;
+	margin-top: -0.25em;
+	margin-bottom: -0.25em;
 }
 
 .index_education_table_cell p ,
@@ -123,6 +135,7 @@ h1, h2, a:hover {
 .index_work_exp_table_cell p,
 .index_work_exp_table_cell_year p,
 .index_projects_summary_table_cell p,
+.index_projects_summary_table_cell_name p,
 .index_projects_summary_table_cell_year p {
 	margin-top: 0;
 }
@@ -144,13 +157,64 @@ h1, h2, a:hover {
 	}
 }
 
+.index_generic_table {
+	display: table;
+}
+
+.index_generic_table_row {
+	display: table-row;
+}
+
+.index_generic_table_cell {
+	display: table-cell;
+}
 
 /*******************************************************************************
- * index_cursory_info
+ * index_overview
  ******************************************************************************/
-#index_cursory_info li {
+.index_overview {
+	margin: 0;
+}
+
+.index_overview_section {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#index_overview_section_qr_code > img{
+	min-width: 80px;
+	max-width: 20%;
+}
+
+@media screen and (max-width: 30em) {
+	/* 480px / 16px == 40em (since 1em == 16px, base font size (above)) */
+	.index_overview_section {
+		display: block;
+	}
+}
+
+.index_overview_section ul {
 	font-weight: bold;
 }
+
+/*******************************************************************************
+ * index_skills
+/******************************************************************************/
+ #index_skills_table {
+	border-spacing: 2em 0.75em;
+	border-collapse: separate;
+	margin-left: -2em;
+	margin-top: -0.75em;
+	margin-bottom: -0.75em;
+ }
+
+ .index_skills_table_cell {
+	 display: table-cell;
+	 padding: 0.25em;
+	 border: 2px solid #009688;
+	 border-radius: 4px;
+ }
 
 /*******************************************************************************
  * index_work_exp
@@ -158,11 +222,11 @@ h1, h2, a:hover {
 #index_work_exp_table {
 	display: table;
 
-	border-spacing: 5px 10px;
+	border-spacing: 0.5em 0.75em;
 	border-collapse: separate;
-	margin-left: -5px;
-	margin-top: -10px;
-	margin-bottom: -10px;
+	margin-left: -0.5em;
+	margin-top: -0.75em;
+	margin-bottom: -0.75em;
 }
 
 .index_work_exp_table_row {
@@ -193,8 +257,13 @@ h1, h2, a:hover {
 	display: table-row;
 }
 
+.index_projects_summary_table_cell_name {
+	min-width: 13ch;
+}
+
 .index_projects_summary_table_cell,
-.index_projects_summary_table_cell_year {
+.index_projects_summary_table_cell_year,
+.index_projects_summary_table_cell_name {
 	display: table-cell;
 }
 
@@ -222,17 +291,17 @@ h1, h2, a:hover {
 
 .index_projects_content ul, .index_projects_content li {
 	list-style-type: disc;
-	margin-top: 0.25%;
-	margin-left: 3%;
+	margin-top: 0.15em;
+	margin-left: 1.25em;
 }
 
 .index_projects_content_section {
-	margin-bottom: 2%;
+	margin-bottom: 1em;
 }
 
 .index_projects_preview_images {
 	text-align: center;
-	margin-bottom: 2%;
+	margin-bottom: 1em;
 }
 
 /*******************************************************************************
