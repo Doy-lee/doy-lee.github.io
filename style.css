@@ -393,3 +393,20 @@ h1, h2, a:hover {
 	}
 }
 
+/*******************************************************************************
+ * index_projects_timetablr
+/******************************************************************************/
+#index_projects_timetablr_header {
+	background-image: url("img/projects_timetablr_header.png");
+}
+
+#index_projects_timetablr_header > h2 {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#index_projects_preview_images_timetablr img{
+	width: 32%;
+	height: 32%;
+}
+
+
