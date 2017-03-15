@@ -166,6 +166,11 @@ h1, h2, a:hover {
 	display: table-cell;
 }
 
+.index_work_exp_table_cell li {
+	list-style-type: disc;
+	margin-left: 1em;
+}
+
 /*******************************************************************************
  * index_overview
  ******************************************************************************/
@@ -236,7 +241,6 @@ h1, h2, a:hover {
 
 .index_work_exp_table_cell_name {
 	font-weight: bold;
-	max-width: 14ch;
 }
 
 .index_work_exp_table_cell_name,
@@ -245,9 +249,8 @@ h1, h2, a:hover {
 	display: table-cell;
 }
 
-.index_work_exp_table_cell li {
-	list-style-type: disc;
-	margin-left: 1em;
+.index_work_exp_table_cell_name {
+	max-width: 14ch;
 }
 
 /*******************************************************************************
@@ -303,6 +306,10 @@ h1, h2, a:hover {
 .index_projects_summary_table_cell_year,
 .index_projects_summary_table_cell_name {
 	display: table-cell;
+}
+
+.index_projects_summary_table_cell_name {
+	min-width: 14ch;
 }
 
 /*******************************************************************************
