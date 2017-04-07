@@ -6,7 +6,7 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(0, 0, 0, 0.9);
 
 	/* Disable auto-resizing on load since it's unreliable. But allow resizing
 	 * by users after the page has loaded */
@@ -315,21 +315,12 @@ h1, h2, a:hover {
 /*******************************************************************************
  * index_projects
 /******************************************************************************/
-.index_projects_header > h2 {
-
-	/* NOTE: Center the text in the header */
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 .index_projects_header {
-	height: 100px;
+	padding-right: 3%;
+	margin-bottom: 2%;
 }
 
-.index_projects_header,
 .index_projects_content {
-	padding-left: 3%;
 	padding-right: 3%;
 	margin-bottom: 2%;
 }
@@ -352,33 +343,23 @@ h1, h2, a:hover {
 /*******************************************************************************
  * index_projects_math_masher
 /******************************************************************************/
-#index_projects_math_masher_header {
-	background-image: url("img/projects_math_masher_header.png");
-}
-
 #index_projects_math_masher h2 {
-	color: rgba(0, 0, 0, 0.8);
 }
 
 #index_projects_preview_images_math_masher img{
-	width: 32%;
-	height: 32%;
+	width: 33%;
+	height: 33%;
 }
 
 /*******************************************************************************
  * index_projects_dengine
 /******************************************************************************/
-#index_projects_dengine_header {
-	background-image: url("img/projects_dengine_header.png");
-}
-
 #index_projects_dengine h2 {
-	color: rgba(255, 255, 255, 0.8);
 }
 
 #index_projects_preview_images_dengine img {
-	width: 49%;
-	height: 49%;
+	width: 49.5%;
+	height: 49.5%;
 }
 
 @media screen and (max-width: 45em) {
@@ -393,17 +374,30 @@ h1, h2, a:hover {
 /*******************************************************************************
  * index_projects_winjump
 /******************************************************************************/
-#index_projects_winjump_header {
-	background-image: url("img/projects_winjump_header.png");
+#index_projects_preview_images_dchip8 img {
+	width: 49.5%;
+	height: 49.5%;
 }
 
+@media screen and (max-width: 45em) {
+	/* 480px / 16px == 30em (since 1em == 16px, base font size (above)) */
+	#index_projects_preview_images_dchip8 img {
+		width: 85%;
+		height: 85%;
+		display: inline-block;
+	}
+}
+
+
+/*******************************************************************************
+ * index_projects_winjump
+/******************************************************************************/
 #index_projects_winjump_header > h2 {
-	color: rgba(255, 255, 255, 0.8);
 }
 
 #index_projects_preview_images_winjump img {
-	width: 49%;
-	height: 49%;
+	width: 49.5%;
+	height: 49.5%;
 }
 
 @media screen and (max-width: 45em) {
@@ -418,17 +412,12 @@ h1, h2, a:hover {
 /*******************************************************************************
  * index_projects_timetablr
 /******************************************************************************/
-#index_projects_timetablr_header {
-	background-image: url("img/projects_timetablr_header.png");
-}
-
 #index_projects_timetablr_header > h2 {
-	color: rgba(255, 255, 255, 0.8);
 }
 
 #index_projects_preview_images_timetablr img{
-	width: 32%;
-	height: 32%;
+	width: 33%;
+	height: 33%;
 }
 
 
