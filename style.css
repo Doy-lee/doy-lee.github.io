@@ -375,15 +375,15 @@ h1, h2, a:hover {
  * index_projects_winjump
 /******************************************************************************/
 #index_projects_preview_images_dchip8 img {
-	width: 49.5%;
-	height: 49.5%;
+	width: 49%;
+	height: 49%;
 }
 
 @media screen and (max-width: 45em) {
-	/* 480px / 16px == 30em (since 1em == 16px, base font size (above)) */
+	/* 720px / 16px == 45em (since 1em == 16px, base font size (above)) */
 	#index_projects_preview_images_dchip8 img {
-		width: 85%;
-		height: 85%;
+		width: 95%;
+		height: 95%;
 		display: inline-block;
 	}
 }
