@@ -9,7 +9,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700'
 		      rel='stylesheet' type='text/css'/>
 
-		<title>Doyle Thai</title>
+		<title>Doyle Thai | Resume</title>
 	</head>
 
 	<body id="index_wrapper">
@@ -20,6 +20,7 @@
 					<h1>DOYLE THAI</h1>
 				</div>
 				<div id="index_header_subtitle">
+					Print Friendly Summary: <a href="doyle_thai_resume_summary.pdf">doy-lee.github.io/doyle_thai_resume_summary.pdf</a></li>
 				</div>
 			</div>
 
@@ -112,6 +113,30 @@
 
 					<ul class="index_projects_summary_table_row">
 						<li class="index_projects_summary_table_cell_year">
+							<p>2017 MAY</p>
+						</li>
+
+						<li class="index_projects_summary_table_cell_name">
+							<h3><a href="index.html#index_projects_dtrenderer">DTRENDERER</a></h3>
+						</li>
+
+						<li class="index_projects_summary_table_cell">
+							<p class="index_projects_summary_table_cell_role">
+								SOLO PROJECT(S)
+							</p>
+
+							<p>Low-level software renderer from (almost all) first principles for learning purposes.</p>
+
+							<p class="index_projects_summary_table_cell_tech">
+								C subset of C++, Win32
+							</p>
+							<p><a href="http://github.com/doy-lee/DTRenderer">github.com/doy-lee/DTRenderer</a></p>
+						</li>
+					</ul> <!-- index_projects_summary_table_row -->
+
+
+					<ul class="index_projects_summary_table_row">
+						<li class="index_projects_summary_table_cell_year">
 							<p>2016 NOV</p>
 							<p>2017 APR</p>
 						</li>
@@ -151,7 +176,7 @@
 							<p>Create a CHIP8 interpreter with minimal libraries.</p>
 
 							<p class="index_projects_summary_table_cell_tech">
-								C, Win32
+								C subset of C++, Win32
 							</p>
 							<p><a href="http://github.com/doy-lee/dchip-8">github.com/doy-lee/dchip-8</a></p>
 
@@ -173,7 +198,7 @@
 							<p>Basic 2D Game Engine using minimal libraries with the goal of creating Asteroids.</p>
 
 							<p class="index_projects_summary_table_cell_tech">
-								C, OpenGL, GLFW, GLEW, Sean Barrett STB Libs, OpenAL
+								C subset of C++, OpenGL, GLFW, GLEW, Sean Barrett STB Libs, OpenAL
 							</p>
 
 							<p><a href="http://github.com/doy-lee/dengine">github.com/doy-lee/dengine</a></p>
@@ -295,7 +320,7 @@
 			<div class="index_divider" id="index_divider_last_before_optional_content"></div>
 
 			<div id="index_projects_personal_tools">
-				<div class="index_projects_header" id="index_projects_math_masherjheader">
+				<div class="index_projects_header">
 					<h2>PERSONAL TOOLS - Custom made tools to improve productivity</h2>
 				</div>
 
@@ -405,9 +430,66 @@
 
 
 				</div>
-			</div> <!-- index_projects_math_masher -->
+			</div> <!-- index_projects_personal_tools -->
 			<div class="index_divider"></div>
 
+			<div id="index_projects_dtrenderer">
+				<div class="index_projects_header" id="index_projects_dtrenderer_header">
+					<h2>DTRENDERER - 3D Software Renderer from First Principles</h2>
+				</div>
+
+				<div class="index_projects_preview_images" id="index_projects_preview_images_dtrenderer">
+					<a href="img/projects_dtrenderer.gif"><img src="img/projects_dtrenderer.gif"></a>
+				</div>
+
+				<div class="index_projects_content">
+					<div class="index_projects_content_section">
+						<h3>LINKS</h3>
+						<ul>
+							<li>
+								<a href="http://github.com/doy-lee/DTRenderer">Github</a> (github.com/Doy-lee/DTRenderer)
+							</li>
+						</ul>
+					</div>
+
+					<div class="index_projects_content_section">
+						<h3>SUMMARY</h3>
+						<p>
+							DTRenderer is an attempt to build a simple software renderer from the ground up.
+							The main goal is to build an intuitive understanding of graphics mathematics,
+							rendering pipeline and core concepts. It runs as a Win32 program with minimal
+							dependencies.
+						</p>
+					</div> <!-- index_projects_content_section -->
+
+					<div class="index_projects_content_section">
+						<h3>MILESTONES</h3>
+						<h4>2D Software Rendering</h4>
+						<ul>
+							<li>Alpha Blending</li>
+							<li>Bilinear Filtering</li>
+							<li>Correct Color Space Pipeline (SRGB <-> Linear)</li>
+							<li>Rasterisation</li>
+							<li>Texture Mapping</li>
+							<li>Translation, Rotation, Scale</li>
+						</ul>
+						<h4>3D Software Rendering</h4>
+						<ul>
+							<li>Full Bright, Flat, Gouraud Shading</li>
+							<li>Orthogaphic, Perspective Projections</li>
+							<li>Translation Rotation Scale</li>
+						</ul>
+						<h4>Misc.</h4>
+						<ul>
+							<li>Custom Wavefront Obj Loader (minimal subset)</li>
+							<li>Hot Reloadable DLL for Renderer Code (taken from Handmade Hero)</li>
+							<li>SIMD "Optimisation" (with a grain of salt, tried to with some % improvement)</li>
+						</ul>
+					</div> <!-- index_projects_content_section -->
+				</div>
+			</div> <!-- index_projects_dtrenderer -->
+
+			<div class="index_divider"></div>
 
 			<div id="index_projects_math_masher">
 				<div class="index_projects_header" id="index_projects_math_masher_header">
@@ -429,9 +511,14 @@
 								(luneaustralia.com)
 							</li>
 						</ul>
-						<a href="https://play.google.com/store/apps/details?id=com.lune.MathMasher">
-							<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width='152px'/>
-						</a>
+						<div id="index_projects_contents_section_app_badges_math_masher" style="margin-top: 0.5em;">
+							<a href="https://itunes.apple.com/au/app/mathmasher/id1239372207">
+								<img alt="IOS Store"  src="img/ios_badge.png" width='132px'/>
+							</a>
+							<a href="https://play.google.com/store/apps/details?id=com.lune.MathMasher">
+								<img alt="Get it on Google Play" src="img/gplay_badge.png" width='146px'/>
+							</a>
+						</div>
 					</div>
 
 					<div class="index_projects_content_section">
@@ -461,6 +548,7 @@
 					</div> <!-- index_projects_content_section -->
 				</div>
 			</div> <!-- index_projects_math_masher -->
+
 			<div class="index_divider"></div>
 
 			<div id="index_projects_dchip8">

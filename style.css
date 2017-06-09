@@ -13,7 +13,7 @@
 	-webkit-text-size-adjust: 100%;
 }
 
-p {
+p, h4 {
 	margin-top: 0.5em;
 }
 
@@ -167,6 +167,15 @@ h1, h2, a:hover {
 .index_work_exp_table_cell li {
 	list-style-type: disc;
 	margin-left: 1em;
+}
+
+#index_header_subtitle {
+	color: #009688;
+	font-weight: bold;
+}
+
+#index_header_subtitle a:link {
+	text-decoration: none;
 }
 
 /*******************************************************************************
@@ -338,6 +347,15 @@ h1, h2, a:hover {
 }
 
 /*******************************************************************************
+ * index_projects_dtrenderer
+/******************************************************************************/
+#index_projects_preview_images_dtrenderer img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*******************************************************************************
  * index_projects_math_masher
 /******************************************************************************/
 #index_projects_math_masher h2 {
@@ -346,6 +364,10 @@ h1, h2, a:hover {
 #index_projects_preview_images_math_masher img{
 	width: 33%;
 	height: 33%;
+}
+
+#index_projects_contents_section_app_badges_math_masher a:link {
+	text-decoration: none;
 }
 
 /*******************************************************************************
