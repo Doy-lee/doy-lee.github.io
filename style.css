@@ -7,7 +7,7 @@
 	padding: 0;
 	list-style-type: none;
 	color: rgba(0, 0, 0, 0.9);
-	font-size: 15px;
+	font-size: 16px;
 	font-family: Roboto, sans-serif;
 
 	/* Disable auto-resizing on load since it's unreliable. But allow resizing
@@ -20,6 +20,8 @@ p, h4 {
 }
 
 html {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 body {
@@ -28,8 +30,8 @@ body {
 }
 
 @media print {
-	html {
-		font-size: 0.85em;
+	html *{
+		font-size: 0.99em;
 	}
 }
 
@@ -41,7 +43,6 @@ body {
 
 	body {
 		max-width: 940px;
-		margin: auto;
 	}
 }
 
@@ -123,23 +124,22 @@ h1, h2, a:hover {
 	margin-top: 0;
 }
 
-.index_education_table_cell p ,
-.index_education_table_cell_year p,
-.index_work_exp_table_cell p,
-.index_work_exp_table_cell_year p,
-.index_work_exp_table_cell_name p,
-.index_projects_summary_table_cell p,
+.index_education_table_cell             p,
+.index_education_table_cell_year        p,
+.index_work_exp_table_cell              p,
+.index_work_exp_table_cell_year         p,
+.index_work_exp_table_cell_name         p,
+.index_projects_summary_table_cell      p,
 .index_projects_summary_table_cell_name p,
 .index_projects_summary_table_cell_year p {
 	margin-top: 0;
 }
 
-.index_projects_summary_table_cell_year,
-.index_education_table_cell_year,
-.index_work_exp_table_cell_year {
+.index_projects_summary_table_cell_year p,
+.index_education_table_cell_year        p,
+.index_work_exp_table_cell_year         p {
 	font-weight: bold;
-	min-width: 10ch;
-	font-size: 0.85em;
+	min-width: 9ch;
 }
 
 @media screen and (max-width: 48em) {
@@ -250,6 +250,10 @@ h1, h2, a:hover {
 .index_work_exp_table_cell_year,
 .index_work_exp_table_cell {
 	display: table-cell;
+}
+
+.index_work_exp_table_cell_name {
+	max-width: 15ch;
 }
 
 /*******************************************************************************
