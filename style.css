@@ -339,6 +339,22 @@ h1, h2, a:hover {
     margin-bottom: 1em;
 }
 
+#index_projects_preview_images_loki img {
+    width: 100%;
+    height: 100%;
+}
+
+#index_projects_preview_images_novel img {
+    width: 100%;
+    height: 100%;
+}
+
+#index_projects_preview_images_kay_engine img {
+    width: 100%;
+    height: 100%;
+}
+
+
 /*******************************************************************************
  * index_projects_dtrenderer
 /******************************************************************************/
@@ -346,7 +362,6 @@ h1, h2, a:hover {
     width: 100%;
     height: 100%;
 }
-
 
 /*******************************************************************************
  * index_projects_math_masher
@@ -357,10 +372,6 @@ h1, h2, a:hover {
 #index_projects_preview_images_math_masher img{
     width: 33%;
     height: 33%;
-}
-
-#index_projects_contents_section_app_badges_math_masher a:link {
-    text-decoration: none;
 }
 
 /*******************************************************************************
@@ -400,49 +411,12 @@ h1, h2, a:hover {
     }
 }
 
-
-/*******************************************************************************
- * index_projects_winjump
-/******************************************************************************/
-#index_projects_preview_images_winjump img {
-    width: 49%;
-    height: 49%;
-}
-
-@media screen and (max-width: 45em) {
-    /* 480px / 16px == 30em (since 1em == 16px, base font size (above)) */
-    #index_projects_preview_images_winjump img {
-        width: 60%;
-        height: 60%;
-        display: inline-block;
-    }
-}
-
-/*******************************************************************************
- * index_projects_dwcopy
-/******************************************************************************/
-#index_projects_preview_images_dwcopy img {
-    width: 100%;
-    height: 100%;
-}
-
 /*******************************************************************************
  * index_projects_dqn
 /******************************************************************************/
 #index_projects_preview_images_dqn img {
     width: 100%;
     height: 100%;
-}
-
-/*******************************************************************************
- * index_projects_timetablr
-/******************************************************************************/
-#index_projects_timetablr_header > h2 {
-}
-
-#index_projects_preview_images_timetablr img{
-    width: 33%;
-    height: 33%;
 }
 
 /*******************************************************************************
