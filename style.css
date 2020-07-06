@@ -126,9 +126,9 @@ h1, h2, a:hover {
 
 .index_education_table_cell             p,
 .index_education_table_cell_year        p,
-.index_work_exp_table_cell              p,
-.index_work_exp_table_cell_year         p,
-.index_work_exp_table_cell_name         p,
+.index_table_cell              p,
+.index_table_cell_year         p,
+.index_table_cell_name         p,
 .index_projects_summary_table_cell      p,
 .index_projects_summary_table_cell_name p,
 .index_projects_summary_table_cell_year p {
@@ -137,7 +137,7 @@ h1, h2, a:hover {
 
 .index_projects_summary_table_cell_year p,
 .index_education_table_cell_year        p,
-.index_work_exp_table_cell_year         p {
+.index_table_cell_year         p {
     font-weight: bold;
     min-width: 9ch;
 }
@@ -146,7 +146,7 @@ h1, h2, a:hover {
     /* 768px / 16px == 48em (since 1em == 16px, base font size (above)) */
     .index_projects_summary_table_cell_year,
     .index_education_table_cell_year,
-    .index_work_exp_table_cell_year {
+    .index_table_cell_year {
         font-weight: bold;
         min-width: 0;
     }
@@ -164,7 +164,7 @@ h1, h2, a:hover {
     display: table-cell;
 }
 
-.index_work_exp_table_cell li {
+.index_table_cell li {
     list-style-type: disc;
     margin-left: 1em;
 }
@@ -230,9 +230,9 @@ h1, h2, a:hover {
  }
 
 /*******************************************************************************
- * index_work_exp
+ * index_table
 /******************************************************************************/
-#index_work_exp_table {
+.index_table {
     display: table;
 
     border-spacing: 0.5em 0.75em;
@@ -242,18 +242,24 @@ h1, h2, a:hover {
     margin-bottom: -0.75em;
 }
 
-.index_work_exp_table_row {
+.index_table_row {
     display: table-row;
 }
 
-.index_work_exp_table_cell_name,
-.index_work_exp_table_cell_year,
-.index_work_exp_table_cell {
+.index_table_cell_name,
+.index_table_cell_year,
+.index_table_cell {
     display: table-cell;
 }
 
-.index_work_exp_table_cell_name {
+.index_table_cell_name {
+    display: table-cell;
     max-width: 15ch;
+}
+
+.index_table_cell_role {
+    color: #009688;
+    font-weight: bold;
 }
 
 /*******************************************************************************
@@ -275,39 +281,6 @@ h1, h2, a:hover {
 
 .index_education_table_cell,
 .index_education_table_cell_year {
-    display: table-cell;
-}
-
-/*******************************************************************************
- * index_projects_summary
-/******************************************************************************/
-#index_projects_summary_table {
-    display: table;
-
-    border-spacing: 0.5em 1em;
-    border-collapse: separate;
-    margin-left: -0.5em;
-    margin-top: -1em;
-    margin-bottom: -1em;
-}
-
-.index_projects_summary_table_row {
-    display: table-row;
-}
-
-.index_projects_summary_table_cell_role {
-    color: #009688;
-    font-weight: bold;
-}
-
-
-.index_projects_summary_table_cell_tech {
-    font-style: italic;
-}
-
-.index_projects_summary_table_cell,
-.index_projects_summary_table_cell_year,
-.index_projects_summary_table_cell_name {
     display: table-cell;
 }
 

@@ -43,45 +43,24 @@
             </div> <!-- index_overview -->
 
             <div class="index_divider"></div>
-            <div id="index_education_wrapper">
-                <h2>EDUCATION</h2>
 
-                <div id="index_education_table">
-                    <ul class="index_education_table_row">
-                            <li class="index_education_table_cell_year">
-                                <p>2014-2017</p>
-                            </li>
-
-                            <li class="index_education_table_cell_place">
-                                <h3>UNIVERSITY OF NEW SOUTH WALES</h3>
-                            </li>
-
-                            <li class="index_education_table_cell">
-                                <p>Bachelor of Science (Computer Science)</p>
-                            </li>
-                    </ul>
-                </div>
-            </div> <!-- index_education_wrapper -->
-
-            <div class="index_divider"></div>
-
-            <div class="index_work_exp_wrapper">
+            <div class="index_wrapper">
                 <h2>WORK EXPERIENCE</h2>
 
-                <div id="index_work_exp_table">
-                    <ul class="index_work_exp_table_row">
-                        <li class="index_work_exp_table_cell_year">
+                <div class="index_table">
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
                             <p>2018 FEB</p>
-                            <p>CURR</p>
+                            <p>CURRENT</p>
                         </li>
 
-                        <li class="index_work_exp_table_cell_name">
+                        <li class="index_table_cell_name">
                             <h3><a href="index.html#index_projects_loki">LOKI</a></h3>
                             <p>Blockchain Engineer</p>
                         </li>
 
-                        <li class="index_work_exp_table_cell">
-                            <p class="index_projects_summary_table_cell_role">
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
                                Blockchain Team
                                <a href="https://github.com/loki-project/loki/commits?author=Doy-lee">(github.com/loki-project/loki/commits?author=Doy-lee)</a>
                             </p>
@@ -134,20 +113,20 @@
                         </li>
                     </ul>
 
-                    <ul class="index_work_exp_table_row">
-                        <li class="index_work_exp_table_cell_year">
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
                             <p>2017 AUG</p>
                             <p>2017 NOV</p>
                         </li>
 
-                        <li class="index_work_exp_table_cell_name">
+                        <li class="index_table_cell_name">
                             <h3>WARGAMING SYD</h3>
                             <p>Intern Software Engineer</p>
                         </li>
 
-                        <li class="index_work_exp_table_cell">
+                        <li class="index_table_cell">
                             <ul>
-                                <p class="index_projects_summary_table_cell_role"> Client Tools Team </p>
+                                <p class="index_table_cell_role"> Client Tools Team </p>
                                 <li>C++11, Qt, Jira, Perforce, Plastic</li>
                                 <li>Working on internal tooling app for assisting content creation.</li>
                                 <li>Bug fix and implement 21 tickets for tools over a span of 3 months.</li>
@@ -155,119 +134,175 @@
                         </li>
                     </ul>
 
-                </div> <!-- index_work_exp_table -->
-            </div> <!-- index_work_exp_wrapper -->
+                </div> <!-- index_table -->
+            </div> <!-- index_wrapper -->
 
             <div class="index_divider"></div>
 
-            <div id="index_projects_summary_wrapper">
+            <div id="index_wrapper">
                 <h2>SIDE PROJECTS</h2>
 
-                <div id="index_projects_summary_table">
+                <div class="index_table">
 
-
-                    <ul class="index_projects_summary_table_row">
-                        <li class="index_projects_summary_table_cell_year">
-                            <p style="color: #009688">ON-GOING</p>
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
+                            <p>CURRENT</p>
                         </li>
 
-                        <li class="index_projects_summary_table_cell_name">
+                        <li class="index_table_cell_name">
                             <h3><a href="index.html#index_projects_dqn_library">DQN LIBRARY</a></h3>
-                            <h3><a href="index.html#index_projects_kay_engine">KAY ENGINE</a></h3>
-                            <h3><a href="index.html#index_projects_novel">NOVEL</a></h3>
                         </li>
 
-                        <li class="index_projects_summary_table_cell">
-                            <p class="index_projects_summary_table_cell_role">
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
                                 Personal Utility Library C++
                                 <a href="http://github.com/doy-lee/dqn">(github.com/doy-lee/dqn)</a>
                             </p>
-                            <p class="index_projects_summary_table_cell_role">
-                                2D Game/Media Engine C++
-                            </p>
-                            <p class="index_projects_summary_table_cell_role">
-                                Mobile Interactive Fiction for Education using KAY ENGINE
-                            </p>
+                            <ul>
+                                <li>Personal library for faster prototyping and memory aware data structures.</li>
+                                <li>Custom memory allocators for cache friendliness, minimising kernel allocation overhead and giving the user control over allocation scheme, memory model and lifetimes.</li>
+                                <li>Minimally allocating arrays/strings/builders w/custom allocator API, stack memory based variants for cache friendliness and minimal overhead.</li>
+                            </ul>
                         </li>
-                    </ul> <!-- index_projects_summary_table_row -->
+                    </ul> <!-- index_table_row -->
 
-                    <ul class="index_projects_summary_table_row">
-                        <li class="index_projects_summary_table_cell_year">
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
+                            <p>CURRENT</p>
+                        </li>
+
+                        <li class="index_table_cell_name">
+                            <h3><a href="index.html#index_projects_novel_kay_engine">NOVEL/KAY ENGINE</a></h3>
+                        </li>
+
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
+                                Interactive Fiction/2D Game Engine C++
+                            </p>
+                            <ul>
+                                <li>Side project to build interactive fiction to encourage learning new languages enjoyable.</li>
+                                <li>Game Engine powered by Raylib</li>
+                                <li>Custom IMGUI and Instrumenting Profiler w/Frame Graph, Call Table</li>
+                            </ul>
+                        </li>
+                    </ul> <!-- index_table_row -->
+
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
+                            <p>CURRENT</p>
+                        </li>
+
+                        <li class="index_table_cell_name">
+                            <h3>RAYLIB SIMD</h3>
+                        </li>
+
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
+                                Raylib SIMD Implementations (Rendering)
+                                <a href="http://github.com/doy-lee/RaylibSIMD">(github.com/doy-lee/RaylibSIMD)</a>
+                            </p>
+                            <ul>
+                                <li>Reimplements Raylib's software rendering using SIMD via SSE (and soon AVX)</li>
+                                <li>Practice implementing SIMD versions of scalar algorithms branchless, resulting in ~4x speed up</li>
+                            </ul>
+                        </li>
+                    </ul> <!-- index_table_row -->
+
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
                             <p>2017</p>
                         </li>
 
-                        <li class="index_projects_summary_table_cell_name">
+                        <li class="index_table_cell_name">
                             <h3><a href="index.html#index_projects_dtrenderer">DTRENDERER</a></h3>
                             <h3><a href="index.html#index_projects_dchip8">DCHIP8</a></h3>
                         </li>
 
-                        <li class="index_projects_summary_table_cell">
-                            <p class="index_projects_summary_table_cell_role">
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
                                 3D Software Renderer from First Principles
                                 <a href="http://github.com/doy-lee/DTRenderer">(github.com/doy-lee/DTRenderer)</a>
                             </p>
-                            <p class="index_projects_summary_table_cell_role">
+                            <p class="index_table_cell_role">
                                 CHIP8 Interpreter
                                 <a href="http://github.com/doy-lee/dchip-8">(github.com/doy-lee/dchip-8)</a>
                             </p>
-
-                            <p class="index_projects_summary_table_cell_tech">
-                                Solo: C/C++, Win32
-                            </p>
+                            <ul>
+                                <li>Solo, C/C++, Win32</li>
+                            </ul>
                         </li>
-                    </ul> <!-- index_projects_summary_table_row -->
+                    </ul> <!-- index_table_row -->
 
-                    <ul class="index_projects_summary_table_row">
-                        <li class="index_projects_summary_table_cell_year">
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
                             <p>2017</p>
                         </li>
 
-                        <li class="index_projects_summary_table_cell_name">
+                        <li class="index_table_cell_name">
                             <h3><a href="index.html#index_projects_math_masher">MATH MASHER</a></h3>
                         </li>
 
-                        <li class="index_projects_summary_table_cell">
-                            <p class="index_projects_summary_table_cell_role">
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
                                 Educational Mobile Math Game
                                 <a href="http://doy-lee.github.io/luneaustralia">(doy-lee.github.io/luneaustralia) (archive only)</a>
                             </p>
 
-                            <p class="index_projects_summary_table_cell_tech">
-                                Lead Dev, Game/Asset Designer: C/C++, Tooling, Photoshop, Cocos2Dx, Audacity
-                            </p>
+                            <ul>
+                                <li> Lead Dev, Game/Asset Designer, C/C++, Tooling, Photoshop, Cocos2Dx, Audacity</li>
+                            </ul>
                         </li>
-                    </ul> <!-- index_projects_summary_table_row -->
+                    </ul> <!-- index_table_row -->
 
 
-                    <ul class="index_projects_summary_table_row">
-                        <li class="index_projects_summary_table_cell_year">
+                    <ul class="index_table_row">
+                        <li class="index_table_cell_year">
                             <p>2016</p>
                         </li>
 
-                        <li class="index_projects_summary_table_cell">
+                        <li class="index_table_cell">
                             <h3><a href="index.html#index_projects_dengine">DENGINE</a></h3>
                         </li>
 
-                        <li class="index_projects_summary_table_cell">
-                            <p class="index_projects_summary_table_cell_role">
+                        <li class="index_table_cell">
+                            <p class="index_table_cell_role">
                                 Basic 2D Game Engine For Learning
                                 <a href="http://github.com/doy-lee/dengine">(github.com/doy-lee/dengine)</a>
                             </p>
 
-                            <p class="index_projects_summary_table_cell_tech">
-                                Solo: C/C++, OpenGL, GLFW, GLEW, Sean Barrett STB Libs, OpenAL
-                            </p>
-
+                            <ul>
+                                <li> Solo, C/C++, OpenGL, GLFW, GLEW, Sean Barrett STB Libs, OpenAL </li>
+                            </ul>
                         </li>
-                    </ul> <!-- index_projects_summary_table_row -->
+                    </ul> <!-- index_table_row -->
 
                 </div>
             </div> <!-- index_project_wrapper -->
 
+            <div class="index_divider"></div>
+            <div id="index_education_wrapper">
+                <h2>EDUCATION</h2>
+
+                <div id="index_education_table">
+                    <ul class="index_education_table_row">
+                            <li class="index_education_table_cell_year">
+                                <p>2014-2017</p>
+                            </li>
+
+                            <li class="index_education_table_cell_place">
+                                <h3>UNIVERSITY OF NEW SOUTH WALES</h3>
+                            </li>
+
+                            <li class="index_education_table_cell">
+                                <p>Bachelor of Science (Computer Science)</p>
+                            </li>
+                    </ul>
+                </div>
+            </div> <!-- index_education_wrapper -->
+
             <!-- IMPORTANT: This divider has a page break that pushes away
             the content below to the next page in printing mode -->
             <div class="index_divider" id="index_divider_last_before_optional_content"></div>
-
 
             <div id="index_skills">
                 <div class="index_skills_section">
@@ -377,15 +412,18 @@
             </div> <!-- index_projects_dqn_library -->
             <div class="index_divider"></div>
 
-            <div id="index_projects_kay_engine">
+            <div id="index_projects_novel_kay_engine">
                 <div class="index_projects_header">
-                    <h2>KAY ENGINE - 2D Game/Media Engine</h2>
+                    <h2>NOVEL/KAY ENGINE - Interactive Fiction/2D Game Engine</h2>
                 </div>
 
                 <div class="index_projects_content">
                     <div class="index_projects_content_section">
                         <div class="index_projects_preview_images" id="index_projects_preview_images_kay_engine">
                             <img src="img/projects_kay_engine_screen_1.png">
+                        </div>
+                        <div class="index_projects_preview_images" id="index_projects_preview_images_kay_engine">
+                            <img src="img/projects_novel_screen_1.png">
                         </div>
 
                         <div class="index_projects_content_section">
@@ -394,44 +432,16 @@
                             Kay Engine is a drop-in engine designed for rapid
                             prototyping. It provides basic services for
                             accessing a rendering/game loop, multithreaded work
-                            queues, managed memory and IMGUI for developing
-                            applications. Its goal is to provide
-                            a highly-reusable engine for my personal projects.
+                            queues, managed memory, IMGUI for developing
+                            applications and a inbuilt profiler. Its goal is to
+                            provide a highly-reusable engine for my personal
+                            projects.
                             </p>
+
                             <p>
                             It currently uses parts of Raylib for the engine and is currently under development.
                             </p>
-                        </div>
 
-                        <div class="index_projects_content_section">
-                            <h3>FEATURES</h3>
-                            <ul>
-                                <li>Immediate Mode UI</li>
-                                <li>Centralised Memory Management</li>
-                                <li>User Input</li>
-                                <li>Render Command Buffers</li>
-                                <li>Debugging UI</li>
-                            </ul>
-                        </div>
-
-                    </div> <!-- index_projects_content_section -->
-                </div>
-            </div> <!-- index_projects_kay_engine -->
-            <div class="index_divider"></div>
-
-            <div id="index_projects_novel">
-                <div class="index_projects_header">
-                    <h2>NOVEL - Mobile Interactive Fiction for Education using KAY ENGINE</h2>
-                </div>
-
-                <div class="index_projects_content">
-                    <div class="index_projects_content_section">
-                        <div class="index_projects_preview_images" id="index_projects_preview_images_novel">
-                            <img src="img/projects_novel_screen_1.png">
-                        </div>
-
-                        <div class="index_projects_content_section">
-                            <h3>SUMMARY</h3>
                             <p>
                             Novel is an exploration into learning languages via
                             semi-interactive fiction using the Kay Engine. By
@@ -446,9 +456,19 @@
                             It is currently under development in my spare time.
                             </p>
                         </div>
+
+                        <div class="index_projects_content_section">
+                            <h3>FEATURES</h3>
+                            <ul>
+                                <li>Custom IMGUI with containers, buttons, layouts and custom composable widgets (with combining primitives)</li>
+                                <li>Per Thread Custom Memory Allocator(s) avoid allocating contention across threads, simplify memory management</li>
+                                <li>User Input, Command Buffers Style Rendering</li>
+                            </ul>
+                        </div>
+
                     </div> <!-- index_projects_content_section -->
                 </div>
-            </div> <!-- index_projects_kay_engine -->
+            </div> <!-- index_projects_novel_kay_engine -->
             <div class="index_divider"></div>
 
             <div id="index_projects_dqn_library">
